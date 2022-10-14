@@ -1,0 +1,189 @@
+._header {
+  &_section {
+    box-shadow: $shadow1;
+    padding: 0 20px;
+  }
+  &_main {
+    @include flex(center, space-between);
+  }
+  &_left {
+    max-width: 332px;
+    width: 100%;
+  }
+  &_logo {
+    max-width: 130px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    display: block;
+  }
+  &_right {
+    max-width: 332px;
+    width: 100%;
+  }
+  &_menu {
+    max-width: 680px;
+    width: 100%;
+    &_main {
+      @include flex(center, space-around);
+    }
+    &_item {
+      width: 100%;
+      @include flex(center, center);
+      margin: 0 5px;
+      position: relative;
+      height: 60px;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2.5px;
+        background-color: $secondary4;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all 0.3s ease;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+    ._menu_item {
+      &_link {
+        width: 100%;
+        cursor: pointer;
+        text-align: center;
+        &:hover ._link_icon {
+          color: $secondary4;
+        }
+      }
+    }
+    ._link_icon {
+      width: 24px !important;
+      height: 24px !important;
+      object-fit: contain;
+      color: $secondary3;
+    }
+  }
+  &_right {
+    max-width: 332px;
+    width: 100%;
+    @include flex(center, end);
+    &_menu {
+      @include flex-align(center);
+      margin-right: 14px;
+    }
+    ._right {
+      &_item_link {
+        padding: 5px;
+        margin: 0 3px;
+        cursor: pointer;
+        position: relative;
+      }
+      &_link {
+        &_icon {
+          width: 24px;
+          height: 24px;
+          object-fit: contain;
+          color: $secondary3;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            color: $secondary4;
+          }
+        }
+        &_icon_txt {
+          position: absolute;
+          font-size: 11px;
+          padding: 4px;
+          border-radius: 50%;
+          background-color: $primary1;
+          color: $white;
+          top: -8px;
+          right: -4px;
+        }
+      }
+    }
+  }
+  &_profile {
+    width: 46px;
+    height: 46px;
+    border: 1px solid $secondary4;
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+}
+
+// Responsive 
+
+/* Dasktop/Laptop */
+@media only screen and (max-width: 1580px) {
+  ._header_menu {
+    max-width: 600px;
+}
+ }
+@media only screen and (max-width: 1199px) {
+  ._header_left {
+    max-width: 255px;
+}
+._header_right {
+  
+  max-width: 255px;
+}
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+  ._header_left {
+    max-width: 220px;
+}
+._header_right {
+  
+  max-width: 220px;
+}
+  
+}
+
+
+@media only screen and (max-width: 767px) {
+  ._header_section {
+    padding: 7px 20px;
+}
+  ._header_menu {
+    display: none;
+}
+  
+}
+
+/* Mobile */
+@media only screen and (max-width: 420px) {
+  ._header_left {
+    max-width: 116px;
+}
+  ._header_logo {
+    max-width: 115px;
+}
+._header_profile {
+  width: 38px;
+  height: 38px;
+}
+  
+}
+@media only screen and (max-width: 375px) {
+  ._header_right ._right_item_link {
+    padding: 4px;
+    margin: 0;
+}
+._header_right ._right_link_icon {
+  width: 22px;
+  height: 22px;
+}
+._header_right ._right_link_icon_txt {
+  font-size: 10px;
+  padding: 3px;
+}
+  
+}
