@@ -23,10 +23,10 @@ function RightSidebar() {
                 <Image
                   src={cocumber}
                   alt="Raihan"
-                  width={400}
-                  height={220}
+                  width={500}
+                  height={270}
                   objectFit="cover"
-                  layout="responsive"
+                  priority
                 />
                 </div>
                 <div className="_sidebar_events_card_content">
@@ -63,10 +63,10 @@ function RightSidebar() {
                 <Image
                   src={cocumber}
                   alt="Raihan"
-                  width={60}
-                  height={84}
+                  width={200}
+                  height={280}
                   objectFit="cover"
-                  layout="responsive"
+                  priority
                 />
                 </div>
                 <div className="_upcomming_events_card_content">
@@ -93,10 +93,9 @@ function RightSidebar() {
                 <Image
                   src={radish}
                   alt="Raihan"
-                  width={60}
-                  height={84}
+                  width={200}
+                  height={280}
                   objectFit="cover"
-                  layout="responsive"
                 />
                 </div>
                 <div className="_upcomming_events_card_content">
@@ -123,10 +122,10 @@ function RightSidebar() {
                 <Image
                   src={cocumber2}
                   alt="Raihan"
-                  width={60}
-                  height={84}
+                  width={200}
+                  height={280}
                   objectFit="cover"
-                  layout="responsive"
+                  priority
                 />
                 </div>
                 <div className="_upcomming_events_card_content">

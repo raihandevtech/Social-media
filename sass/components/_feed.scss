@@ -1,334 +1,334 @@
-._feed_section{
-    margin: 30px 10px 20px 10px;
-    width: 600px;
-    overflow-y: scroll;
-    height: 100vh;
-    &::-webkit-scrollbar {
-        display: none;
-      }
+._feed_section {
+ padding-top: 30px;
+  margin: 0 10px 20px 10px;
+  width: 600px;
+  overflow-y: scroll;
+  height: 160vh;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
-._feed_welcome{
-    padding: 18px;
-    border: 1px solid $border3;
-    border-radius: 8px;
-    margin-bottom: 15px;
+._feed_welcome {
+  padding: 18px;
+  border: 1px solid $border3;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
-._feed_welcome_back_txt{
-    font-size: 17px;
-    font-weight: 600;
-    color: $secondary3;
-    margin-bottom: 5px;
+._feed_welcome_back_txt {
+  font-size: 17px;
+  font-weight: 600;
+  color: $secondary3;
+  margin-bottom: 5px;
 }
-._feed_welcome_Name{
-    font-size: 22px;
-    font-weight: 600;
-    color: $secondary3;
+._feed_welcome_Name {
+  font-size: 22px;
+  font-weight: 600;
+  color: $secondary3;
 }
-._feed_story{
-    @include flex-align(center);
-    overflow-x: scroll;
-    &::-webkit-scrollbar{
-        display: none;
-    }
-    margin-bottom: 15px;
+._feed_story {
+  @include flex-align(center);
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  margin-bottom: 15px;
 }
 
-._feed_story_create{
-    min-width: 102px;
-    height: 160px;
-    margin-right: 8px;
-    border-radius: 8px;
-    border: 1px solid $border3;
-     @include flex(center, center);
-     flex-direction: column;
+._feed_story_create {
+  min-width: 102px;
+  height: 160px;
+  margin-right: 8px;
+  border-radius: 8px;
+  border: 1px solid $border3;
+  @include flex(center, center);
+  flex-direction: column;
 }
-._create_store_btn{
-    width: 35px;
-    height: 35px;
+._create_store_btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: $secondary2;
+  border: none;
+  outline: none;
+  @include flex(center, center);
+  ._store_btn_icon {
+    color: $white;
+    font-size: 20px;
+  }
+  margin-bottom: 6px;
+}
+._create_store_txt {
+  font-size: 14px;
+}
+._feed_story_item {
+  position: relative;
+  margin-right: 8px;
+  cursor: pointer;
+}
+._feed_story_item:last-child {
+  margin-right: 0;
+}
+._feed_story_item_thumb {
+  width: 102px;
+  img {
+    border-radius: 8px;
+  }
+}
+
+._feed_story_item_profile {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid $border3;
+  border-radius: 50%;
+  img {
     border-radius: 50%;
-    background-color: $secondary2;
-    border: none;
-    outline: none;
-    @include flex(center, center);
-    ._store_btn_icon{
-        color: $white;
-        font-size: 20px;
-    }
-    margin-bottom: 6px;
-}
-._create_store_txt{
-    font-size: 14px;
-}
-._feed_story_item{
-    position: relative;
-    margin-right: 8px;
-    cursor: pointer;
-}
-._feed_story_item:last-child{
-    margin-right: 0;
-}
-._feed_story_item_thumb{
-    width: 102px;
-    img{
-    border-radius: 8px;
-    }
+  }
 }
 
-._feed_story_item_profile{
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 52px;
-    height: 52px;
-        border: 2px solid $border1;
-        border-radius: 50%;
-    img{
-        border-radius: 50%;
-    }
+._feed_create_post {
+  padding: 15px;
+  border: 1px solid $border3;
+  border-radius: 8px;
+  margin-bottom: 16px;
 }
-
-._feed_create_post{
-    padding: 15px;
-    border: 1px solid $border3;
-    border-radius: 8px;
-    margin-bottom: 16px;
+._feed_create_post_form {
+  @include flex-align(center);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid $border2;
 }
-._feed_create_post_form{
-    @include flex-align(center);
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid $border2;
+._create_post_profile_img {
+  width: 40px;
+  height: 40px;
+  img {
+    border-radius: 50%;
+  }
 }
-._create_post_profile_img{
-    width: 40px;
-    height: 40px;
-    img{
-        border-radius: 50%;
-    }
+._create_post_input {
+  width: 100%;
+  margin-left: 15px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: $bg2;
+  padding: 0 20px;
+  font-size: 14px;
+  color: $secondary3;
 }
-._create_post_input{
-    width: 100%;
-    margin-left: 15px;
-    height: 40px;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    background-color: $bg2;
-    padding: 0 20px;
-    font-size: 14px;
-    color: $secondary3;
+._feed_create_post_media {
+  @include flex(center, space-between);
+  margin: 0 20px;
 }
-._feed_create_post_media{
-    @include flex(center, space-between);
-    margin: 0 20px;
-}
-._create_post_media_btn{
-    @include flex-align(center);
-    border: none;
-    outline: none;
-    background: transparent;
-    ._media_btn_icom{
-        font-size: 24px;
-        color: $secondary6;
-        margin-right: 6px;
-    }
-    ._photo{
-        color: $primary1;
-    }
-    ._event{
-        font-size: 20px;
-    }
-    ._heart{
-        font-size: 22px;
-        color: $primary1;
-    }
-    ._media_btn_txt{
-        font-size: 15px;
-        font-weight: 600;
-        color: $secondary3;
-    }
-
-}
-._feed_media_and_posts{
-    border: 1px solid $border3;
-    
-    border-radius: 8px 8px 0 0 ;
-}
-._media_and_posts_tabs{
-    padding: 0 20px;
-    ._tab_btn{
-        width: 50%;
-        border: none;
-        padding: 14px 0;
-        font-size: 15px;
-        font-weight: 600;
-        color: $secondary3;
-        background-color: transparent;
-    }
-    ._tab_btn._active{
-        border-bottom: 2px solid $primary1;
-        color: $primary1;
-    }
-}
-._posts_top_bar_recent{
-    @include flex(center, space-between);
-    padding: 16px 20px;
-}
-._top_bar_recent_txt{
-    font-size: 16px;
-    color: $secondary3;
-}
-._top_bar_recent_btns{
-    @include flex-align(center);
-}
-._top_bar_recent_btn_item{
-    border: none;
-    outline: none;
-    background-color: transparent;
-    margin-left: 10px;
-    ._recent_btn_icon{
-        font-size: 21px;
-        color: $secondary3;
-    }
-    ._bar{
-        transform: rotate(90deg);
-    }
-}
-._posts_top_bar_tags{
-    padding: 0 20px 20px 20px;
-    ._posts_tag_btn{
-        font-size: 14px;
-        font-weight: 500;
-        color: $secondary3;
-        background-color: transparent;
-        border: none;
-        outline: none;
-        padding: 10px 20px;
-        border-radius: 30px;
-        margin-right: 10px;
-        border: 1px solid $border3;
-    }
-    ._posts_tag_btn._active{
-        background-color: $bg4;
-        
-    }
-    ._posts_tag_btn:last-child{
-        margin-right: 0;
-    }
-}
-
-._post_card{
-    border-top: 1px solid $border3;
-    padding: 20px;
-    @include flex-align(flex-start);
-        
-}
-._post_card_profile_img{
-    min-width: 40px;
-    height: 40px;
-    img{
-        border-radius: 50%;
-    }
-}
-._post_card_main{
-    flex-grow: 1;
-
-}
-._post_card_main_top{
-    @include flex(center, space-between);
-    ._card_top_user_info{
-        margin-left: 10px;
-        ._card_top_user_name{
-            font-size: 16px;
-            color: $secondary2;
-            ._user_unique_name{
-                color: $secondary3;
-                margin-left: 6px;
-            }
-        }
-    }
-    ._card_top_btns{
-        ._top_btn_item{
-            border: none;
-            outline: none;
-            background-color: transparent;
-            margin-left: 8px;
-            ._top_btn_icon{
-                font-size: 23px;
-                color: $secondary2;
-            }
-        }
-    }
-    ._card_top_suggested{
-        @include flex-align(center);
-        ._suggested_txt{
-            font-size: 15px;
-            color: $secondary3;
-            margin-right: 4px;
-        }
-        ._suggested_time{
-            font-size: 15px;
-            color: $secondary3;
-            padding: 0 15px;
-            position: relative;
-        }
-        ._suggested_time::after{
-            position: absolute;
-            content: '';
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background-color: $secondary2;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 6px;
-        }
-        ._suggested_time::before{
-            position: absolute;
-            content: '';
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background-color: $secondary2;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 6px;
-        }
-        ._suggested_setting{
-            ._setting_icon{
-                font-size: 17px;
-                color: $secondary2;
-                margin-top: 6px;
-            }
-        }
-    }
-}
-._post_card_txt{
+._create_post_media_btn {
+  @include flex-align(center);
+  border: none;
+  outline: none;
+  background: transparent;
+  ._media_btn_icom {
+    font-size: 24px;
+    color: $secondary6;
+    margin-right: 6px;
+  }
+  ._photo {
+    color: $primary1;
+  }
+  ._event {
+    font-size: 20px;
+  }
+  ._heart {
+    font-size: 22px;
+    color: $primary1;
+  }
+  ._media_btn_txt {
     font-size: 15px;
-    margin: 8px 0 12px 0;
+    font-weight: 600;
     color: $secondary3;
+  }
 }
-._post_card_thumb{
-    img{
-        border-radius: 8px;
-    }
+._feed_media_and_posts {
+  border: 1px solid $border3;
+
+  border-radius: 8px 8px 0 0;
 }
-._post_card_bottom{
-    padding: 16px 0 0;
-    @include flex(center, space-between);
+._media_and_posts_tabs {
+  padding: 0 20px;
+  ._tab_btn {
+    width: 50%;
+    border: none;
+    padding: 14px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: $secondary3;
+    background-color: transparent;
+  }
+  ._tab_btn._active {
+    border-bottom: 2px solid $primary1;
+    color: $primary1;
+  }
 }
-._post_card_react_btn{
+._posts_top_bar_recent {
+  @include flex(center, space-between);
+  padding: 16px 20px;
+}
+._top_bar_recent_txt {
+  font-size: 16px;
+  color: $secondary3;
+}
+._top_bar_recent_btns {
+  @include flex-align(center);
+}
+._top_bar_recent_btn_item {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-left: 10px;
+  ._recent_btn_icon {
+    font-size: 21px;
+    color: $secondary3;
+  }
+  ._bar {
+    transform: rotate(90deg);
+  }
+}
+._posts_top_bar_tags {
+  padding: 0 20px 20px 20px;
+  ._posts_tag_btn {
+    font-size: 14px;
+    font-weight: 500;
+    color: $secondary3;
+    background-color: transparent;
     border: none;
     outline: none;
-    background-color: transparent;
-    @include flex-align(center);
-    border-radius: 4px;
-        font-weight: 500;
-        color: $secondary2;
-        font-size: 16px;
-    ._react_icon{
-        font-size: 22px;
-        margin-right: 8px;
-        color: $secondary2;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+    border: 1px solid $border3;
+  }
+  ._posts_tag_btn._active {
+    background-color: $bg4;
+  }
+  ._posts_tag_btn:last-child {
+    margin-right: 0;
+  }
+}
+
+._post_card {
+  border: 1px solid $border3;
+  border-top: 0;
+  padding: 20px;
+  @include flex-align(flex-start);
+}
+._post_card_profile_img {
+  max-width: 40px;
+  width: 100%;
+  height: 40px;
+  img {
+    border-radius: 50%;
+  }
+}
+._post_card_main {
+  flex-grow: 1;
+}
+._post_card_main_top {
+  @include flex(center, space-between);
+  ._card_top_user_info {
+    margin-left: 10px;
+    ._card_top_user_name {
+      font-size: 15px;
+      line-height: 1.2;
+      color: $secondary2;
+      ._user_unique_name {
+        color: $secondary3;
+        margin-left: 6px;
+      }
     }
+  }
+  ._card_top_btns {
+    ._top_btn_item {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      margin-left: 8px;
+      ._top_btn_icon {
+        font-size: 23px;
+        color: $secondary2;
+      }
+    }
+  }
+  ._card_top_suggested {
+    @include flex-align(center);
+    ._suggested_txt {
+      font-size: 14px;
+      color: $secondary3;
+      margin-right: 4px;
+    }
+    ._suggested_time {
+      font-size: 15px;
+      color: $secondary3;
+      padding: 0 15px;
+      position: relative;
+    }
+    ._suggested_time::after {
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $secondary2;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 6px;
+    }
+    ._suggested_time::before {
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $secondary2;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 6px;
+    }
+    ._suggested_setting {
+      ._setting_icon {
+        font-size: 17px;
+        color: $secondary2;
+        margin-top: 6px;
+      }
+    }
+  }
+}
+._post_card_txt {
+  font-size: 15px;
+  margin: 8px 0 12px 0;
+  color: $secondary3;
+}
+._post_card_thumb {
+  img {
+    border-radius: 8px;
+  }
+}
+._post_card_bottom {
+  padding: 16px 0 0;
+  @include flex(center, space-between);
+}
+._post_card_react_btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  @include flex-align(center);
+  border-radius: 4px;
+  font-weight: 500;
+  color: $secondary2;
+  font-size: 14px;
+  ._react_icon {
+    font-size: 20px;
+    margin-right: 8px;
+    color: $secondary2;
+  }
 }

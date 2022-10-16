@@ -2,6 +2,12 @@
   &_section {
     box-shadow: $shadow1;
     padding: 0 20px;
+    position: fixed;
+    min-width: 100%;
+    z-index: 999;
+    margin-top: -50px;
+    z-index: 9999;
+    background-color: $white;
   }
   &_main {
     @include flex(center, space-between);
@@ -68,7 +74,7 @@
   &_right {
     max-width: 332px;
     width: 100%;
-    @include flex(center, end);
+    @include flex(center, flex-end);
     &_menu {
       @include flex-align(center);
       margin-right: 14px;
@@ -118,72 +124,65 @@
   }
 }
 
-// Responsive 
+// Responsive
 
 /* Dasktop/Laptop */
 @media only screen and (max-width: 1580px) {
   ._header_menu {
     max-width: 600px;
+  }
 }
- }
 @media only screen and (max-width: 1199px) {
   ._header_left {
     max-width: 255px;
-}
-._header_right {
-  
-  max-width: 255px;
-}
+  }
+  ._header_right {
+    max-width: 255px;
+  }
 }
 /* Ipad pro */
 @media only screen and (max-width: 991px) {
   ._header_left {
     max-width: 220px;
+  }
+  ._header_right {
+    max-width: 220px;
+  }
 }
-._header_right {
-  
-  max-width: 220px;
-}
-  
-}
-
 
 @media only screen and (max-width: 767px) {
   ._header_section {
     padding: 7px 20px;
-}
+  }
   ._header_menu {
     display: none;
-}
-  
+  }
 }
 
 /* Mobile */
 @media only screen and (max-width: 420px) {
   ._header_left {
     max-width: 116px;
-}
+  }
   ._header_logo {
     max-width: 115px;
-}
-._header_profile {
-  width: 38px;
-  height: 38px;
-}
-  
+  }
+  ._header_profile {
+    width: 38px;
+    height: 38px;
+  }
 }
 @media only screen and (max-width: 375px) {
   ._header_right ._right_item_link {
     padding: 4px;
     margin: 0;
-}
-._header_right ._right_link_icon {
-  width: 22px;
-  height: 22px;
-}
-._header_right ._right_link_icon_txt {
-  font-size: 10px;
-  padding: 3px;
-}
-  
+  }
+  ._header_right ._right_link_icon {
+    width: 22px;
+    height: 22px;
+  }
+  ._header_right ._right_link_icon_txt {
+    font-size: 10px;
+    padding: 3px;
+  }
 }

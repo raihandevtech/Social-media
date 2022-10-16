@@ -17,11 +17,11 @@ function Header() {
       <div className="_header_wrap">
         <div className="_header_main">
           <div className="_header_left">
-            <div className="_header_logo">
               <Link href="/">
-                <Image src={logo} alt='logo' layout="responsive" />
-              </Link>
+            <div className="_header_logo">
+                <Image src={logo} alt='logo' layout="responsive" priority />
             </div>
+              </Link>
           </div>
           <div className="_header_menu">
             <ul className="_header_menu_main">
@@ -87,12 +87,12 @@ function Header() {
                 </Link>
               </li>
             </ul>
-            <div className="_header_profile">
                 <Link href="/">
+            <div className="_header_profile">
                     
             <Image src={raihan} width={200} height={200} objectFit="cover" alt="Raihan"  />
-                </Link>
             </div>
+                </Link>
           </div>
         </div>
       </div>

@@ -20,7 +20,10 @@ function LeftSidebar() {
             <div className="_sidebar_profile">
                 <div className="_sidebar_profile_thumb">
                    <Link href="/">
+                    <div className="_sidebar_profile_img">
                     <Image src={raihan} width={200} height={200} objectFit="cover" alt='Raihan'  />
+
+                    </div>
                     </Link>
                     <span className="_thumb_video_icon">
                         <BiVideo className='_icon_img' />
@@ -111,7 +114,7 @@ function LeftSidebar() {
                 <p className="_sidebar_status_new_connect_txt">Got New 24 Connections!</p>
                 <div className="_sidebar_status_card">
                     <div className="_status_card_thumb">
-                    <Image src={garlic} alt="garlic" height={120} width={100} layout='responsive' objectFit='cover' />
+                    <Image src={garlic} alt="garlic" height={360} width={300} objectFit='cover' />
                     </div>
                     <div className="_status_card_content">
                         <div className="_card_content_item">
